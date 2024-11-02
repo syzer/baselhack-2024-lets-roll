@@ -1,6 +1,13 @@
 # lets roll
 two dice roll for exercise snack
-
-https://quiet-seat.surge.sh/
 shake to throw dice
-```
+
+# usage
+1. shake your phone
+2. get a health snack
+3. prolong your life!
+
+# as seen on tv:
+https://lets-roll.surge.sh/
+
+![Splash Screen](css/splash-screen.png)

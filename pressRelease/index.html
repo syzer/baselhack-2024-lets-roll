@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Side by Side Videos</title>
+  <style>
+      .video-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+      }
+      video {
+          width: 50%;
+          height: 100%;
+      }
+      .floating-qr {
+          position: fixed;
+          top: 20px;
+          left: 50%;
+          transform: translate(-50%, 0);
+          height: 400px;
+          width: 400px; /* Adjust the size as needed */
+          z-index: 1000; /* Ensure it is on top of other elements */
+          /*box-shadow: 21px 21px 8px rgba(0, 0, 0, 0.5); !* Add drop shadow *!*/
+          box-shadow: 21px 21px 21px rgba(0, 0, 0, 0.5), /* Existing shadow */
+                10px 10px 10px rgba(255, 255, 255, 0.7); /* White blurred shadow */
+          /*display: flex-column;*/
+          /*justify-content: center;*/
+          /*align-items: center;*/
+      }
+      #qr {
+          width: 100%;
+          height: 100%;
+          object-fit: fill;
+      }
+      .logo-text {
+          font-size: 133px; /* Adjust the size as needed */
+          padding-left: 30px;
+          font-weight: bold;
+          margin-top: 10px;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), /* Existing shadow */
+                    10px 10px 10px rgba(255, 255, 255, 0.7); /* White blurred shadow */
+      }
+      .logo-subtext {
+          margin-top: 10px;
+          font-size: 64px;
+          padding-left: 35px;
+          font-weight: bold;
+          color: gray; /* Set the text color to gray */
+          font-style: italic; /* Italicize the text to represent quotes */
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), /* Existing shadow */
+          10px 10px 10px rgba(255, 255, 255, 0.7); /* White blurred shadow */
+      }
+      .bodyish {
+        position: relative;
+      }
+  </style>
+</head>
+<body>
+<div class="bodyish">
+  <div class="floating-qr">
+    <img id="qr" src="LetsRollQr.png" alt="QR Code"/>
+    <div class="logo-text">Let's Roll</div>
+    <div class="logo-subtext">“Lonely soul”</div>
+  </div>
+  <div class="video-container">
+    <video id="video-left" src="letsRoll2D.mp4" loop autoplay muted></video>
+    <video id="video-right" src="letsRoll3D.mp4" loop autoplay muted></video>
+  </div>
+</div>
+<script>
+  let vid = document.getElementById("video-left");
+  vid.playbackRate = 0.3;
+  let vid2 = document.getElementById("video-right");
+  vid2.playbackRate = 0.3;
+</script>
+</body>
+</html>

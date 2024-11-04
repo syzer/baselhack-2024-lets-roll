@@ -3,24 +3,17 @@
   "short_name": "LetsRoll",
   "description": "A fun dice rolling app",
   "start_url": "/",
-  "display": "standalone",
+  "display": "fullscreen",
   "background_color": "#f4f4f4",
   "theme_color": "#007BFF",
   "icons": [
     {
-      "src": "../favicon/icon-192x192.png",
+      "src": "favicon/android-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "../favicon/icon-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ],
-  "splash_screens": [
-    {
-      "src": "../favicon/splash-screen.png",
+      "src": "favicon/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }

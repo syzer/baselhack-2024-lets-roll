@@ -11,3 +11,9 @@ shake to throw dice
 https://lets-roll.surge.sh/
 
 ![Splash Screen](css/splash-screen.png)
+![demo.png](../demo.png)
+
+
+
+---page
+![LetsRollQr.png](favicon/LetsRollQr.png)
